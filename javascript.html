@@ -1,0 +1,10 @@
+<script>
+//****************************** ชุดฟังก์ชันเริ่มต้น ******************************//
+function doGet() {
+  return HtmlService.createTemplateFromFile('index').evaluate()
+    .setTitle('RUN LAN')
+    .setFaviconUrl('https://img.icons8.com/fluency/48/sports-mode.png')
+    .addMetaTag('viewport', 'width=device-width, initial-scale=1')
+    .setXFrameOptionsMode(HtmlService.XFrameOptionsMode.ALLOWALL)
+}
+</script>
